@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(183, 146, 221);
+  font-family: serif;
+  color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+#description{
+    font-style: italic;
+    text-align: center;
+    font-size: large;
+}
+
+label,
+input,
+select {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+label{
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+}
+
+form{
+    background-color: rgba(16, 25, 27, 0.53);
+    width: 50%;
+    margin: auto;
+    font-size: x-large;
+}
