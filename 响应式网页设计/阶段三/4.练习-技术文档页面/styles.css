@@ -1,0 +1,21 @@
+#navbar{
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+@media (min-width=555px){
+    #navbar{
+        width: 20%
+    }
+}
+
