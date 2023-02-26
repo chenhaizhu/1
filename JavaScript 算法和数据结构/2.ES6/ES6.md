@@ -151,3 +151,31 @@ const myFunc = () => "value";
 这段代码默认会返回字符串 `value`。
 
 [练习](./arrowFunction.js)
+
+## 5. 编写带参数的箭头函数
+
+和一般的函数一样，你也可以给箭头函数传递参数。
+
+```javascript
+const doubler = (item) => item * 2;
+doubler(4);
+```
+
+`doubler(4)` 将返回 `8`。
+
+如果箭头函数只有一个参数，则可以省略参数外面的括号。
+
+```javascript
+const doubler = item => item * 2;
+```
+
+可以给箭头函数传递多个参数。
+
+```javascript
+const multiplier = (item, multi) => item * multi;
+multiplier(4, 2);
+```
+
+`multiplier(4, 2)` 将返回 `8`。
+
+[练习](./arrowFunctionWithArgs.js)
