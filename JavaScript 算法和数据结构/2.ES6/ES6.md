@@ -179,3 +179,23 @@ multiplier(4, 2);
 `multiplier(4, 2)` 将返回 `8`。
 
 [练习](./arrowFunctionWithArgs.js)
+
+## 6. 设置函数的默认参数
+
+ES6 里允许给函数传入*默认参数*，来构建更加灵活的函数。
+
+请看以下代码：
+
+```javascript
+const greeting = (name = "Anonymous") => "Hello " + name;
+
+console.log(greeting("John"));
+console.log(greeting());
+```
+
+控制台将显示字符串 `Hello John` 和 `Hello Anonymous`。
+
+默认参数会在参数没有被指定（值为 undefined）的时候起作用。 在上面的例子中，参数 `name` 会在没有得到新的值的时候，默认使用值
+`Anonymous`。 你还可以给多个参数赋予默认值。
+
+[练习](./defaultParam.js)
