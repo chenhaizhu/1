@@ -118,3 +118,36 @@ console.log(obj);
 赋值将导致错误，因为我们的编辑器默认在严格模式下运行，控制台将显示值 `{ name: "FreeCodeCamp", review: "Awesome" }`。
 
 [练习](./preventObjectChange.js)
+
+## 4. 使用箭头函数编写简洁的匿名函数
+
+在 JavaScript 里，我们会经常遇到不需要给函数命名的情况，尤其是在需要将一个函数作为参数传给另外一个函数的时候。这时，我们会创建匿名函数。
+因为这些函数不会在其他地方复用，所以我们不需要给它们命名。
+
+这种情况下，我们通常会使用以下语法：
+
+```javascript
+const myFunc = function () {
+    const myVar = "value";
+    return myVar;
+}
+```
+
+ES6 提供了其他写匿名函数的方式的语法糖。 你可以使用**箭头函数**：
+
+```javascript
+const myFunc = () => {
+    const myVar = "value";
+    return myVar;
+}
+```
+
+当不需要函数体，只返回一个值的时候，箭头函数允许你省略 `return` 关键字和外面的大括号。 这样就可以将一个简单的函数简化成一个单行语句。
+
+```javascript
+const myFunc = () => "value";
+```
+
+这段代码默认会返回字符串 `value`。
+
+[练习](./arrowFunction.js)
