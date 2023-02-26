@@ -95,3 +95,26 @@ console.log(s);
 中的数组元素是可变的，但是因为使用了 `const`，所以不能使用变量标识符 `s` 来指向一个使用赋值运算符的不同数组。
 
 [练习](./changeArrayOfConst.js)
+
+## 3. 防止对象改变
+
+通过之前的章节可以看出，`const` 声明并不会真的保护数据不被改变。为了确保数据不被改变，JavaScript
+提供了一个函数 `Object.freeze`。
+
+任何更改对象的尝试都将被拒绝，如果脚本在严格模式下运行，将抛出错误。
+
+```javascript
+let obj = {
+    name: "FreeCodeCamp",
+    review: "Awesome"
+};
+Object.freeze(obj);
+obj.review = "bad";
+obj.newProp = "Test";
+console.log(obj); 
+```
+
+`obj.review` 和 `obj.newProp`
+赋值将导致错误，因为我们的编辑器默认在严格模式下运行，控制台将显示值 `{ name: "FreeCodeCamp", review: "Awesome" }`。
+
+[练习](./preventObjectChange.js)
