@@ -302,3 +302,32 @@ const {name: userName, age: userAge} = user;
 ，`userAge` 的值将是数字 `34`。
 
 [练习](./deconstructedAssignment2.js)
+
+## 11. 使用解构赋值从嵌套对象中分配变量
+
+你可以使用前两节课程中相同的原则来解构嵌套对象中的值。
+
+使用与前面的例子中类似的对象：
+
+```javascript
+const user = {
+    johnDoe: {
+        age: 34,
+        email: 'johnDoe@freeCodeCamp.com'
+    }
+};
+```
+
+这是解构对象的属性值赋值给具有相同名字的变量：
+
+```javascript
+const {johnDoe: {age, email}} = user;
+```
+
+这是将对象的属性值赋值给具有不同名字的变量：
+
+```javascript
+const {johnDoe: {age: userAge, email: userEmail}} = user;
+```
+
+[练习](./deconstructedAssignment3.js)
