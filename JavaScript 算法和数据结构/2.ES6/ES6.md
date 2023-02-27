@@ -280,4 +280,25 @@ const {name, age} = user;
 
 你可以从对象中提取尽可能多或很少的值。
 
-[练习](./deconstructedAssignment.js)
+[练习](./deconstructedAssignment1.js)
+
+## 10. 使用解构赋值从对象中分配变量
+
+可以给解构的值赋予一个新的变量名， 通过在赋值的时候将新的变量名放在冒号后面来实现。
+
+还是以上个例子的对象来举例：
+
+```javascript
+const user = {name: 'John Doe', age: 34};
+```
+
+这是指定新的变量名的例子：
+
+```javascript
+const {name: userName, age: userAge} = user;
+```
+
+你可以这么理解这段代码：获取 `user.name` 的值，将它赋给一个新的变量 `userName`，等等。 `userName` 的值将是字符串 `John Doe`
+，`userAge` 的值将是数字 `34`。
+
+[练习](./deconstructedAssignment2.js)
