@@ -357,3 +357,23 @@ console.log(a, b, c);
 控制台将显示 `a`、`b` 和 `c` 的值为 `1, 2, 5`。
 
 [练习](./deconstructedAssignment4.js)
+
+## 13. 通过 rest 参数解构
+
+在解构数组的某些情况下，我们可能希望将剩下的元素放进另一个数组里面。
+
+以下代码的结果与使用 `Array.prototype.slice()` 类似：
+
+```javascript
+const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+console.log(a, b);
+console.log(arr);
+```
+
+控制台将显示 `1, 2` 和 `[3, 4, 5, 7]`。
+
+变量 `a` 和 `b` 分别接收数组的第一个和第二个值。 之后，因为 rest 语法，`arr` 以数组形式接收了剩余的值。 rest
+参数只能对数组列表最后的元素起作用。
+这意味着你不能使用 rest 语法来省略原数组最后一个元素、截取中间的元素作为子数组。
+
+[练习](./deconstructedAssignment5.js)
