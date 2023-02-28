@@ -608,4 +608,23 @@ export {add};
 export {add, subtract};
 ```
 
-[练习](./exportCodeBlock.js)
+[练习](./string_functions.js)
+
+## 22. 通过 import 复用 JavaScript 代码
+
+`import` 可以导入文件或模块的一部分。 在之前的课程里，例子从 `math_functions.js` 文件里导出了 `add`。 下面看一下如何在其它文件导入它：
+
+```javascript
+import {add} from './math_functions.js';
+```
+
+在这里，`import` 会在 `math_functions.js` 里找到 `add`，只导入这个函数，忽略剩余的部分。 `./`
+告诉程序在当前文件的相同目录寻找 `math_functions.js` 文件。 用这种方式导入时，相对路径（`./`）和文件扩展名（`.js`）都是必需的。
+
+通过在 `import` 语句里添加项目，可以从文件里导入多个项目，如下：
+
+```javascript
+import {add, subtract} from './math_functions.js';
+```
+
+[练习](./importReusableCode.js)
