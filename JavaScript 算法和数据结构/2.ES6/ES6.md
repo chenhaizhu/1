@@ -523,3 +523,44 @@ atlas.launch();
 `constructor` 方法是一个特殊方法，用于创建和初始化 class 创建的对象。
 
 [练习](./classSyntaxConstructor.js)
+
+## 19. 使用 getter 和 setter 来控制对象的访问
+
+你可以从对象中获得一个值，也可以给对象的属性赋值。
+
+这些操作通常被称为 _getters_ 以及 _setters_。
+
+Getter 函数的作用是可以让对象返回一个私有变量，而不需要直接去访问私有变量。
+
+Setter 函数的作用是可以基于传进的参数来修改对象中私有变量。 这些修改可以是计算，或者是直接替换之前的值。
+
+```javascript
+class Book {
+    constructor(author) {
+        this._author = author;
+    }
+
+    // getter
+    get writer() {
+        return this._author;
+    }
+
+    // setter
+    set writer(updatedAuthor) {
+        this._author = updatedAuthor;
+    }
+}
+
+const novel = new Book('anonymous');
+console.log(novel.writer);
+novel.writer = 'newAuthor';
+console.log(novel.writer);
+```
+
+控制台将显示字符串 `anonymous` 和 `newAuthor`。
+
+请注意用于调用 getter 和 setter 的语法。 它们甚至看起来不像是函数。 getter 和 setter 非常重要，因为它们隐藏了内部的实现细节。
+
+**注意：** 通常会在私有变量前添加下划线（`_`）。 然而，这种做法本身并不是将变量变成私有的。
+
+[练习](./objectAccessControl.js)
