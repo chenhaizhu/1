@@ -672,4 +672,18 @@ export default function (x, y) {
 `export default` 用于为模块或文件声明一个返回值，在每个文件或者模块中应当只默认导出一个值。 此外，你不能将 `export default`
 与 `var`、`let` 或 `const` 同时使用。
 
-[练习](./defaultExport.js)
+[练习](./math_functions.js)
+
+## 25. 导入一个默认的导出
+
+在上一个挑战里，学习了 `export default` 的用法。 还需要一种 `import` 的语法来导入默认的导出。 在下面的例子里，`add`
+是 `math_functions.js` 文件的默认导出。 以下是如何导入它：
+
+```javascript
+import add from "./math_functions.js";
+```
+
+这个语法有一处特别的地方， 被导入的 `add` 值没有被花括号（`{}`）所包围。 `add` 只是一个变量的名字，对应 `math_functions.js`
+文件的任何默认导出值。 在导入默认导出时，可以使用任何名字。
+
+[练习](./importDefault.js)
