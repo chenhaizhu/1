@@ -431,3 +431,25 @@ console.log(greeting);
 同样，你可以在字符串中包含其他表达式，例如 `${a + b}`。 这个新的方式使你可以更灵活地创建复杂的字符串。
 
 [练习](./templateLiterals.js)
+
+## 16. 使用简单字段编写简洁的对象字面量声明
+
+ES6 添加了一些很棒的功能，用于更方便地定义对象。
+
+请看以下代码：
+
+```javascript
+const getMousePosition = (x, y) => ({
+    x: x,
+    y: y
+});
+```
+
+`getMousePosition` 简单的函数，返回拥有两个属性的对象。ES6 提供了一个语法糖，消除了类似 `x: x` 这种冗余的写法。 你可以只写一次
+`x`，解释器会自动将其转换成 `x: x`（或效果相同的内容）。 下面是使用这种语法重写的同样的函数：
+
+```javascript
+const getMousePosition = (x, y) => ({x, y});
+```
+
+[练习](./templateLiterals.js)
