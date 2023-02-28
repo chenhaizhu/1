@@ -479,3 +479,47 @@ const person = {
 ```
 
 [练习](./conciseFunctionDeclarations.js)
+
+## 18. 使用 class 语法定义构造函数
+
+ES6 提供了一个新的创建对象的语法，使用关键字 _class_。
+
+在 ES5 里面，我们通过定义一个函数 `constructor` 来创建一个对象，然后使用 `new` 关键字来实例化对象。
+
+在 ES6 里，`class` 声明有一个 `constructor` 方法，与 `new` 关键字一起被调用。如果 `constructor` 方法没有明确定义，那么它就被含蓄地定义为没有参数。
+
+```javascript
+// Explicit constructor
+class SpaceShuttle {
+    constructor(targetPlanet) {
+        this.targetPlanet = targetPlanet;
+    }
+
+    takeOff() {
+        console.log("To " + this.targetPlanet + "!");
+    }
+}
+
+// Implicit constructor 
+class Rocket {
+    launch() {
+        console.log("To the moon!");
+    }
+}
+
+const zeus = new SpaceShuttle('Jupiter');
+// prints To Jupiter! in console
+zeus.takeOff();
+
+const atlas = new Rocket();
+// prints To the moon! in console
+atlas.launch();
+```
+
+应该注意 `class` 关键字声明了一个新的函数，里面添加了一个构造函数。 当用 `new` 创建一个新的对象时，构造函数会被调用。
+
+**注意：** 首字母大写驼峰命名法 UpperCamelCase 是 ES6 class 命名的惯例，就像上面的 `SpaceShuttle`。
+
+`constructor` 方法是一个特殊方法，用于创建和初始化 class 创建的对象。
+
+[练习](./classSyntaxConstructor.js)
