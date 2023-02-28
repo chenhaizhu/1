@@ -647,3 +647,29 @@ myMathModule.subtract(5, 3);
 ```
 
 [练习](./importAll.js)
+
+## 24. 用 export default 创建一个默认导出
+
+在 `export` 的课程中，学习了*命名导出*语法， 这可以在其他文件中引用一些函数或者变量。
+
+还需要了解另外一种被称为*默认导出*的 `export` 的语法。 在文件中只有一个值需要导出的时候，通常会使用这种语法。
+它也常常用于给文件或者模块创建返回值。
+
+下面是使用 `export default` 的例子：
+
+```javascript
+export default function add(x, y) {
+    return x + y;
+}
+
+export default function (x, y) {
+    return x + y;
+}
+```
+
+第一个是命名函数，第二个是匿名函数。
+
+`export default` 用于为模块或文件声明一个返回值，在每个文件或者模块中应当只默认导出一个值。 此外，你不能将 `export default`
+与 `var`、`let` 或 `const` 同时使用。
+
+[练习](./defaultExport.js)
