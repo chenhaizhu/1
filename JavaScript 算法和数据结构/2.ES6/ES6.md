@@ -564,3 +564,18 @@ console.log(novel.writer);
 **注意：** 通常会在私有变量前添加下划线（`_`）。 然而，这种做法本身并不是将变量变成私有的。
 
 [练习](./objectAccessControl.js)
+
+## 20. 创建一个模块脚本
+
+起初，JavaScript 几乎只在 HTML web 扮演一个很小的角色。今天，一切不同了，很多网站几乎全是用 JavaScript 所写。 为了让
+JavaScript 更模块化、更整洁以及更易于维护，ES6 引入了在多个 JavaScript 文件之间共享代码的机制。
+它可以导出文件的一部分供其它文件使用，然后在需要它的地方按需导入。 为了使用这一功能， 需要在 HTML 文档里创建一个 `type`
+为 `module` 的脚本。 例子如下：
+
+```javascript
+<script type="module" src="filename.js"></script>
+```
+
+使用了 `module` 类型的脚本可以使用 `import` 和 `export` 特性。
+
+[练习](./moduleScript.html)
