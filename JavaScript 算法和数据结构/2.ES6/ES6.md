@@ -736,3 +736,18 @@ myPromise.then(result => {
 `result` 即传入 `resolve` 方法的参数。
 
 [练习](./handlePromiseWithThen.js)
+
+## 29. 使用 catch 处理 Promise 失败的情况
+
+当 promise 失败时会调用 `catch` 方法。 当 promise 的 `reject` 方法执行时会直接调用。 用法如下：
+
+```javascript
+myPromise.catch(error => {
+
+});
+```
+
+`error` 是传入 `reject` 方法的参数。
+
+[练习](./handlePromiseWithCatch.js)
+
