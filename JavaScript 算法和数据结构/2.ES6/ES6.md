@@ -701,3 +701,23 @@ const myPromise = new Promise((resolve, reject) => {
 ```
 
 [练习](./createPromise.js)
+
+## 27. 通过 resolve 和 reject 完成 Promise
+
+Promise 有三个状态：`pending`、`fulfilled` 和 `rejected`。上一个挑战里创建的 promise 一直阻塞在 `pending` 状态里，因为没有调用
+promise 的完成方法。Promise 提供的 `resolve` 和 `reject` 参数就是用来结束 promise 的。 Promise 成功时调用 `resolve`
+，promise 执行失败时调用 `reject`， 如下文所述，这些方法需要有一个参数。
+
+```
+const myPromise = new Promise((resolve, reject) => {
+  if(condition here) {
+    resolve("Promise was fulfilled");
+  } else {
+    reject("Promise was rejected");
+  }
+});
+```
+
+上面的示例使用字符串作为这些函数的参数，但参数实际上可以是任何格式。 通常，它可能是一个包含数据的对象，你可以将它放在网站或其他地方。
+
+[练习](./resolveRejectPromise.js)
