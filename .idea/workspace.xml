@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ea165a2-2f9f-4ea7-b443-0b2fbee20b80" name="变更" comment="正则表达式 - 匹配字符串的末尾">
+      <change afterPath="$PROJECT_DIR$/JavaScript 算法和数据结构/3.正则表达式/matchAllAlphanumeric.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript 算法和数据结构/3.正则表达式/正则表达式.md" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript 算法和数据结构/3.正则表达式/正则表达式.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +93,7 @@
       <workItem from="1676734846570" duration="179000" />
       <workItem from="1678209074754" duration="2164000" />
       <workItem from="1678212170591" duration="734000" />
-      <workItem from="1678281968412" duration="2757000" />
+      <workItem from="1678281968412" duration="3473000" />
     </task>
     <task id="LOCAL-00001" summary="CSS动画">
       <created>1676732872155</created>
@@ -156,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678285263626</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="正则表达式 - 匹配字符串的末尾">
+      <created>1678285297086</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678285297086</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
